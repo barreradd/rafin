@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Laptops</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .producto {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .producto h3 {
+            margin: 0;
+            color: #333;
+        }
+        .producto p {
+            color: #555;
+        }
+        .caracteristicas {
+            display: none;
+            margin-top: 10px;
+        }
+        .btn-compra {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn-compra:hover {
+            background-color: #45a049;
+        }
+        .btn-mostrar {
+            padding: 8px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn-mostrar:hover {
+            background-color: #0b7dda;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Venta de Laptops</h1>
+
+        <!-- Laptop A1 -->
+        <div class="producto">
+            <h3>Laptop A1</h3>
+            <p><strong>Precio:</strong> $800</p>
+            <button class="btn-mostrar" onclick="mostrarCaracteristicas('caracteristicasA1')">Mostrar características</button>
+            <div id="caracteristicasA1" class="caracteristicas">
+                <ul>
+                    <li>Procesador: Intel i5</li>
+                    <li>RAM: 8GB</li>
+                    <li>Almacenamiento: 1TB HDD</li>
+                    <li>Pantalla: 15.6" Full HD</li>
+                </ul>
+            </div>
+            <button class="btn-compra" onclick="comprar()">Comprar</button>
+        </div>
+
+        <!-- Laptop B2 -->
+        <div class="producto">
+            <h3>Laptop B2</h3>
+            <p><strong>Precio:</strong> $1000</p>
+            <button class="btn-mostrar" onclick="mostrarCaracteristicas('caracteristicasB2')">Mostrar características</button>
+            <div id="caracteristicasB2" class="caracteristicas">
+                <ul>
+                    <li>Procesador: Intel i7</li>
+                    <li>RAM: 16GB</li>
+                    <li>Almacenamiento: 512GB SSD</li>
+                    <li>Pantalla: 14" Full HD</li>
+                </ul>
+            </div>
+            <button class="btn-compra" onclick="comprar()">Comprar</button>
+        </div>
+
+        <!-- Laptop C3 -->
+        <div class="producto">
+            <h3>Laptop C3</h3>
+            <p><strong>Precio:</strong> $950</p>
+            <button class="btn-mostrar" onclick="mostrarCaracteristicas('caracteristicasC3')">Mostrar características</button>
+            <div id="caracteristicasC3" class="caracteristicas">
+                <ul>
+                    <li>Procesador: AMD Ryzen 5</li>
+                    <li>RAM: 8GB</li>
+                    <li>Almacenamiento: 1TB HDD</li>
+                    <li>Pantalla: 15.6" Full HD</li>
+                </ul>
+            </div>
+            <button class="btn-compra" onclick="comprar()">Comprar</button>
+        </div>
+
+        <!-- Laptop D4 -->
+        <div class="producto">
+            <h3>Laptop D4</h3>
+            <p><strong>Precio:</strong> $1200</p>
+            <button class="btn-mostrar" onclick="mostrarCaracteristicas('caracteristicasD4')">Mostrar características</button>
+            <div id="caracteristicasD4" class="caracteristicas">
+                <ul>
+                    <li>Procesador: Intel i9</li>
+                    <li>RAM: 32GB</li>
+                    <li>Almacenamiento: 1TB SSD</li>
+                    <li>Pantalla: 17.3" 4K</li>
+                </ul>
+            </div>
+            <button class="btn-compra" onclick="comprar()">Comprar</button>
+        </div>
+
+        <!-- Laptop E5 -->
+        <div class="producto">
+            <h3>Laptop E5</h3>
+            <p><strong>Precio:</strong> $750</p>
+            <button class="btn-mostrar" onclick="mostrarCaracteristicas('caracteristicasE5')">Mostrar características</button>
+            <div id="caracteristicasE5" class="caracteristicas">
+                <ul>
+                    <li>Procesador: Intel i3</li>
+                    <li>RAM: 4GB</li>
+                    <li>Almacenamiento: 500GB HDD</li>
+                    <li>Pantalla: 15.6" HD</li>
+                </ul>
+            </div>
+            <button class="btn-compra" onclick="comprar()">Comprar</button>
+        </div>
+
+        <!-- Laptop F6 -->
+        <div class="producto">
+            <h3>Laptop F6</h3>
+            <p><strong>Precio:</strong> $1100</p>
+            <button class="btn-mostrar" onclick="mostrarCaracteristicas('caracteristicasF6')">Mostrar características</button>
+            <div id="caracteristicasF6" class="caracteristicas">
+                <ul>
+                    <li>Procesador: AMD Ryzen 7</li>
+                    <li>RAM: 16GB</li>
+                    <li>Almacenamiento: 512GB SSD</li>
+                    <li>Pantalla: 15.6" Full HD</li>
+                </ul>
+            </div>
+            <button class="btn-compra" onclick="comprar()">Comprar</button>
+        </div>
+
+        <!-- Laptop G7 -->
+        <div class="producto">
+            <h3>Laptop G7</h3>
+            <p><strong>Precio:</strong> $850</p>
+            <button class="btn-mostrar" onclick="mostrarCaracteristicas('caracteristicasG7')">Mostrar características</button>
+            <div id="caracteristicasG7" class="caracteristicas">
+                <ul>
+                    <li>Procesador: Intel i5</li>
+                    <li>RAM: 8GB</li>
+                    <li>Almacenamiento: 1TB HDD</li>
+                    <li>Pantalla: 14" Full HD</li>
+                </ul>
+            </div>
+            <button class="btn-compra" onclick="comprar()">Comprar</button>
+        </div>
+
+        <!-- Laptop H8 -->
+        <div class="producto">
+            <h3>Laptop H8</h3>
+            <p><strong>Precio:</strong> $1350</p>
+            <button class="btn-mostrar" onclick="mostrarCaracteristicas('caracteristicasH8')">Mostrar características</button>
+            <div id="caracteristicasH8" class="caracteristicas">
+                <ul>
+                    <li>Procesador: Intel i9</li>
+                    <li>RAM: 64GB</li>
+                    <li>Almacenamiento: 1TB SSD</li>
+                    <li>Pantalla: 17.3" 4K</li>
+                </ul>
+            </div>
+            <button class="btn-compra" onclick="comprar()">Comprar</button>
+        </div>
+
+        <!-- Laptop I9 -->
+        <div class="producto">
+            <h3>Laptop I9</h3>
+            <p><strong>Precio:</strong> $950</p>
+            <button class="btn-mostrar" onclick="mostrarCaracteristicas('caracteristicasI9')">Mostrar características</button>
+            <div id="caracteristicasI9" class="caracteristicas">
+                <ul>
+                    <li>Procesador: AMD Ryzen 5</li>
+                    <li>RAM: 8GB</li>
+                    <li>Almacenamiento: 512GB SSD</li>
+                    <li>Pantalla: 14" Full HD</li>
+                </ul>
+            </div>
+            <button class="btn-compra" onclick="comprar()">Comprar</button>
+        </div>
+
+        <!-- Laptop J10 -->
+        <div class="producto">
+            <h3>Laptop J10</h3>
+            <p><strong>Precio:</strong> $700</p>
+            <button class="btn-mostrar" onclick="mostrarCaracteristicas('caracteristicasJ10')">Mostrar características</button>
+            <div id="caracteristicasJ10" class="caracteristicas">
+                <ul>
+                    <li>Procesador: Intel i3</li>
+                    <li>RAM: 4GB</li>
+                    <li>Almacenamiento: 500GB HDD</li>
+                    <li>Pantalla: 13.3" HD</li>
+                </ul>
+            </div>
+            <button class="btn-compra" onclick="comprar()">Comprar</button>
+        </div>
+
+        <!-- Laptop K11 -->
+        <div class="producto">
+            <h3>Laptop K11</h3>
+            <p><strong>Precio:</strong> $1250</p>
+            <button class="btn-mostrar" onclick="mostrarCaracteristicas('caracteristicasK11')">Mostrar características</button>
+            <div id="caracteristicasK11" class="caracteristicas">
+                <ul>
+                    <li>Procesador: Intel i7</li>
+                    <li>RAM: 16GB</li>
+                    <li>Almacenamiento: 512GB SSD</li>
+                    <li>Pantalla: 15.6" Full HD</li>
+                </ul>
+            </div>
+            <button class="btn-compra" onclick="comprar()">Comprar</button>
+        </div>
+
+        <!-- Laptop L12 -->
+        <div class="producto">
+            <h3>Laptop L12</h3>
+            <p><strong>Precio:</strong> $1100</p>
+            <button class="btn-mostrar" onclick="mostrarCaracteristicas('caracteristicasL12')">Mostrar características</button>
+            <div id="caracteristicasL12" class="caracteristicas">
+                <ul>
+                    <li>Procesador: AMD Ryzen 5</li>
+                    <li>RAM: 12GB</li>
+                    <li>Almacenamiento: 1TB SSD</li>
+                    <li>Pantalla: 14" Full HD</li>
+                </ul>
+            </div>
+            <button class="btn-compra" onclick="comprar()">Comprar</button>
+        </div>
+
+        <!-- Laptop M13 -->
+        <div class="producto">
+            <h3>Laptop M13</h3>
+            <p><strong>Precio:</strong> $950</p>
+            <button class="btn-mostrar" onclick="mostrarCaracteristicas('caracteristicasM13')">Mostrar características</button>
+            <div id="caracteristicasM13" class="caracteristicas">
+                <ul>
+                    <li>Procesador: Intel i5</li>
+                    <li>RAM: 8GB</li>
+                    <li>Almacenamiento: 1TB HDD</li>
+                    <li>Pantalla: 15.6" Full HD</li>
+                </ul>
+            </div>
+            <button class="btn-compra" onclick="comprar()">Comprar</button>
+        </div>
+
+    </div>
+
+    <script>
+        // Función para mostrar las características de la laptop seleccionada
+        function mostrarCaracteristicas(id) {
+            var caracteristicasDiv = document.getElementById(id);
+            if (caracteristicasDiv.style.display === "none" || caracteristicasDiv.style.display === "") {
+                caracteristicasDiv.style.display = "block";
+            } else {
+                caracteristicasDiv.style.display = "none";
+            }
+        }
+
+        // Función para mostrar el mensaje de compra
+        function comprar() {
+            alert("¡Felicidades por tu compra!");
+        }
+    </script>
+
+</body>
+</html>
